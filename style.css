@@ -108,3 +108,41 @@ section h3 {
   transform: scale(1.05);
   box-shadow: 0 0 10px #00f5ff;
 }
+
+.hero {
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(270deg, #00f5ff, #7b2cff);
+  background-size: 400% 400%;
+  animation: gradientMove 8s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+.hero-sub {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.linkedin {
+  background: #0a66c2;
+}
+
+.hero-mini {
+  margin-top: 25px;
+}
+
+.hero-mini a {
+  margin: 10px;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
