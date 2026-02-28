@@ -39,3 +39,18 @@ a {
   color: #00f5ff;
   text-decoration: none;
 }
+
+section {
+  max-width: 900px;
+  margin: auto;
+  text-align: left;
+}
+
+section h2 {
+  text-align: center;
+}
+
+section h3 {
+  margin-top: 30px;
+  color: #00f5ff;
+}
