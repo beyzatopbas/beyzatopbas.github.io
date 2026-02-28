@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0a0f1c;
+  color: white;
+  text-align: center;
+}
+
+header {
+  padding: 80px 20px;
+  background: linear-gradient(90deg, #00f5ff, #7b2cff);
+}
+
+h1 {
+  margin: 0;
+  font-size: 3em;
+}
+
+section {
+  padding: 50px 20px;
+}
+
+.card {
+  background: #11182a;
+  margin: 20px auto;
+  padding: 25px;
+  width: 80%;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+a {
+  display: inline-block;
+  margin: 10px;
+  color: #00f5ff;
+  text-decoration: none;
+}
