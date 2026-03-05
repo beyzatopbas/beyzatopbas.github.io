@@ -114,6 +114,11 @@ ul {
   color: #00f5ff;
 }
 
+.card ul {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
 /* BUTTONS */
 
 .buttons {
