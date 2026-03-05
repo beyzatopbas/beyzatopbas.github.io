@@ -108,6 +108,12 @@ ul {
   box-shadow: 0 0 20px rgba(0,245,255,0.2);
 }
 
+/* Project titles inside cards */
+
+.card strong {
+  color: #00f5ff;
+}
+
 /* BUTTONS */
 
 .buttons {
