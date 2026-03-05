@@ -80,6 +80,12 @@ display:grid;
 grid-template-columns:repeat(2,1fr);
 gap:40px;
 margin-top:30px;
+text-align:center;
+}
+
+.skills-grid ul{
+list-style-position:inside;
+padding:0;
 }
 
 /* CARDS */
