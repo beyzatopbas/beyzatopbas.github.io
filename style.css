@@ -73,6 +73,15 @@ grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
 gap:25px;
 }
 
+/* SKILLS GRID */
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:40px;
+margin-top:30px;
+}
+
 /* CARDS */
 
 .card{
@@ -97,6 +106,13 @@ color:#00f5ff;
 .card ul{
 margin-top:5px;
 margin-bottom:15px;
+}
+
+/* CENTER LISTS */
+
+section ul{
+max-width:600px;
+margin:auto;
 }
 
 /* BUTTONS */
@@ -180,6 +196,12 @@ font-size:18px;
 
 section{
 padding:40px 20px;
+}
+
+/* SKILLS MOBILE */
+
+.skills-grid{
+grid-template-columns:1fr;
 }
 
 }
