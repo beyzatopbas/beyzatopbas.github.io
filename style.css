@@ -6,9 +6,20 @@ body {
   text-align: center;
 }
 
-header {
-  padding: 80px 20px;
-  background: linear-gradient(90deg, #00f5ff, #7b2cff);
+/* HERO SECTION */
+
+.hero {
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(270deg, #00f5ff, #7b2cff);
+  background-size: 400% 400%;
+  animation: gradientMove 8s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
 }
 
 h1 {
@@ -16,66 +27,88 @@ h1 {
   font-size: 3em;
 }
 
-section {
-  padding: 50px 20px;
+.hero-sub {
+  font-size: 20px;
+  margin-top: 15px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
 }
 
-.card {
-  background: #11182a;
-  margin: 20px auto;
-  padding: 25px;
-  width: 80%;
-  border-radius: 15px;
-  transition: 0.3s;
+/* HERO STATS */
+
+.hero-stats {
+  margin-top: 20px;
+  font-size: 14px;
+  opacity: 0.9;
 }
 
-.card:hover {
-  transform: scale(1.05);
+/* HERO BUTTONS */
+
+.hero-buttons {
+  margin-top: 30px;
 }
 
-a {
-  display: inline-block;
+.hero-mini {
+  margin-top: 25px;
+}
+
+.hero-mini a {
   margin: 10px;
-  color: #00f5ff;
+  color: white;
+  font-size: 14px;
   text-decoration: none;
+  opacity: 0.8;
 }
+
+.hero-mini a:hover {
+  opacity: 1;
+}
+
+/* SECTIONS */
 
 section {
   max-width: 900px;
   margin: auto;
+  padding: 60px 20px;
   text-align: left;
 }
 
 section h2 {
   text-align: center;
+  margin-bottom: 40px;
 }
 
 section h3 {
-  margin-top: 30px;
+  margin-top: 25px;
   color: #00f5ff;
 }
 
-.view-all {
-  text-align: center;
-  margin-top: 40px;
+/* LISTS */
+
+ul {
+  padding-left: 20px;
+  line-height: 1.6;
 }
 
-.view-all a {
-  display: inline-block;
-  padding: 12px 25px;
-  border-radius: 10px;
-  background: #00f5ff;
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
+/* PROJECT CARDS */
+
+.card {
+  background: #11182a;
+  margin: 25px auto;
+  padding: 25px;
+  width: 100%;
+  border-radius: 15px;
   transition: 0.3s;
 }
 
-.view-all a:hover {
-  background: #7b2cff;
-  color: white;
-  box-shadow: 0 0 15px #00f5ff;
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0,245,255,0.2);
 }
+
+/* BUTTONS */
 
 .buttons {
   margin-top: 15px;
@@ -104,45 +137,70 @@ section h3 {
   background: #20beff;
 }
 
+.linkedin {
+  background: #0a66c2;
+}
+
 .btn:hover {
   transform: scale(1.05);
   box-shadow: 0 0 10px #00f5ff;
 }
 
-.hero {
-  padding: 100px 20px;
-  text-align: center;
-  background: linear-gradient(270deg, #00f5ff, #7b2cff);
-  background-size: 400% 400%;
-  animation: gradientMove 8s ease infinite;
+/* LINKS */
+
+a {
+  display: inline-block;
+  margin: 10px;
+  color: #00f5ff;
+  text-decoration: none;
 }
 
-@keyframes gradientMove {
-  0% {background-position: 0% 50%;}
-  50% {background-position: 100% 50%;}
-  100% {background-position: 0% 50%;}
+a:hover {
+  opacity: 0.9;
+}
+
+/* VIEW ALL BUTTON */
+
+.view-all {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.view-all a {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 10px;
+  background: #00f5ff;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.view-all a:hover {
+  background: #7b2cff;
+  color: white;
+  box-shadow: 0 0 15px #00f5ff;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+.hero {
+  padding: 80px 20px;
+}
+
+h1 {
+  font-size: 2.2em;
 }
 
 .hero-sub {
-  font-size: 20px;
-  margin-top: 10px;
+  font-size: 18px;
 }
 
-.hero-buttons {
-  margin-top: 30px;
+section {
+  padding: 40px 20px;
 }
 
-.linkedin {
-  background: #0a66c2;
-}
-
-.hero-mini {
-  margin-top: 25px;
-}
-
-.hero-mini a {
-  margin: 10px;
-  color: white;
-  font-size: 14px;
-  text-decoration: none;
 }
