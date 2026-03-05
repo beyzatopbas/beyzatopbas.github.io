@@ -114,6 +114,14 @@ li {
   box-shadow: 0 10px 30px rgba(0,245,255,0.2);
 }
 
+/* PROJECT GRID */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
 .card strong {
   color: #00f5ff;
 }
@@ -121,6 +129,10 @@ li {
 .card ul {
   margin-top: 5px;
   margin-bottom: 15px;
+}
+
+.projects-grid .card {
+  margin: 0;
 }
 
 /* BUTTONS */
