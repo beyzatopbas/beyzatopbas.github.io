@@ -266,4 +266,16 @@ color:#00f5ff;
 font-weight:500;
 }
 
+/* RECENT ML WORK CENTER */
+
+.recent-work{
+text-align:center;
+}
+
+.recent-work ul{
+display:inline-block;
+text-align:left;
+margin-top:10px;
+}
+  
 }
